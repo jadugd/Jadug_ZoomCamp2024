@@ -5,7 +5,7 @@ variable "credentials" {
 
 variable "project" {
   description = "Project Name"
-  default     = "zoomcamp2024-411321"
+  default     = "<Your Project ID>"
 }
 
 variable "region" {
@@ -26,7 +26,7 @@ variable "bq_dataset_name" {
 
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name Demo"
-  default     = "zoomcamp2024-411321-terra-bucket"
+  default     = "zoomcamp2024-terra-bucket"
 }
 
 variable "gcs_storage_class" {
