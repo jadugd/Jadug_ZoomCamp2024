@@ -1,3 +1,8 @@
+variable "credentials" {
+  description = "My Credentials"
+  default     = "./keys/my-creds.json"
+}
+
 variable "project" {
   description = "Project Name"
   default     = "zoomcamp2024-411321"
