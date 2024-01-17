@@ -30,4 +30,5 @@ resource "google_storage_bucket" "auto-destroy-bucket" {
 
 resource "google_bigquery_dataset" "demo_dataset" {
   dataset_id = "demo_dataset"
+  location = var.location
 }
