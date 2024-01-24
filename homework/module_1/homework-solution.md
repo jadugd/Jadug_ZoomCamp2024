@@ -47,7 +47,55 @@ exit
 
 So, the wheel version is `0.42.0`
 
+# Prepare Postgres
 
+I started up my postgres database and pgadmin from module 1 course [here](https://github.com/jadugd/Jadug_ZoomCamp2024/blob/main/module_1/docker_psql/docker-compose.yaml) :
 
+```bash
+$ cd module_1/docker_psql/
+$ docker compose up -d
+[+] Running 2/3
+ ⠧ Network docker_psql_default         Created                                                                                         0.7s 
+ ✔ Container docker_psql-pgadmin-1     Started                                                                                         0.7s 
+ ✔ Container docker_psql-pgdatabase-1  Started 
+```
+
+Then i use pgcli command to connect to the database :
+
+```bash 
+$ pgcli -h localhost -p 5432 -u root -d ny_taxi
+```
+
+I use jupyter notebook to ingest data from csv to database [link](https://github.com/jadugd/Jadug_ZoomCamp2024/blob/main/homework/module_1/homework_upload_data.ipynb)
+
+## Question 3. Count records 
+
+How many taxi trips were totally made on September 18th 2019?
+
+Tip: started and finished on 2019-09-18. 
+
+Remember that `lpep_pickup_datetime` and `lpep_dropoff_datetime` columns are in the format timestamp (date and hour+min+sec) and not in date.
+
+I use this query to find the answer :
+
+```sql
+select 
+count(1) 
+from green_taxi_trips t
+where to_char(t.lpep_pickup_datetime, 'yyyy-mm-dd') = '2019-09-18'
+and to_char(t.lpep_dropoff_datetime, 'yyyy-mm-dd') = '2019-09-18';
+```
+The output from the query above is :
+
+```bash
++-------+
+| count |
+|-------|
+| 15612 |
++-------+
+SELECT 1
+Time: 0.140s
+root@localhost:ny_taxi>
+```
 
 
