@@ -1,4 +1,4 @@
-elect 
+select 
 count(1) 
 from green_taxi_trips t
 where to_char(t.lpep_pickup_datetime, 'yyyy-mm-dd') = '2019-09-18'
