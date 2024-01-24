@@ -45,6 +45,9 @@ root@b2db6ccd7cd7:/# exit
 exit
 ```
 
+So, the wheel version is `0.42.0`
+
+
 
 
 
