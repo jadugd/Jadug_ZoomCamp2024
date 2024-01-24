@@ -1,5 +1,8 @@
-# Jadug_ZoomCamp2024
+## Jadug_ZoomCamp2024
 
-# Module 1: Containerization and Infrastructure as Code
-Using GCP and Terraform
-Using Docker with PostgreSQL
+## Module 1: Containerization and Infrastructure as Code
+- Using GCP and Terraform
+- Using Docker with PostgreSQL
+
+
+## Module 2 : TODO
