@@ -13,13 +13,14 @@ order by 2 desc;
 
 select 
 	z."Borough",
-	SUM(t.total_amount) as "total"
+	SUM(t.total_amount) as "sum_total_amount"
 from 
 	green_taxi_trips t join taxi_zone z
 	ON z."LocationID"=t."PULocationID"
 where
 	to_char(t.lpep_pickup_datetime, 'yyyy-mm-dd') = '2019-09-18'
 GROUP BY 1
+HAVING SUM(t.total_amount) > 50000
 ORDER BY 2 DESC
 LIMIT 3;
 
