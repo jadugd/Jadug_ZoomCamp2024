@@ -1,6 +1,6 @@
 variable "credentials" {
   description = "My Credentials"
-  default     = "~/.gc/zoomcamp2024-411321-523689d5115e.json"
+  default     = "~/.gc/zoomcamp2024-411908-9b7e51b98e69.json"
   #ex: if you have a directory where this file is called keys with your service account json file
   #saved there as my-creds.json you could use default = "./keys/my-creds.json"
 }
@@ -8,7 +8,7 @@ variable "credentials" {
 
 variable "project" {
   description = "Project"
-  default     = "zoomcamp2024-411321"
+  default     = "zoomcamp2024-411908"
 }
 
 variable "region" {
