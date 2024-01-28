@@ -1,6 +1,6 @@
 ## Module 1 Lerning Review
 
-[Link Post]()
+[Link Post](https://www.linkedin.com/posts/jadug-destian_dataengineering-zoomcamp-gcp-activity-7157228306445070337-5EuJ?utm_source=share&utm_medium=member_desktop)
 
 What I learned in the first week is :
 
