@@ -1,0 +1,7 @@
+# Ignore modifications to .env and .json files
+*.env
+*.json
+
+# Ignore entire folders
+mage*/
+magic*/
