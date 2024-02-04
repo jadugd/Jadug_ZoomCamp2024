@@ -7,4 +7,5 @@ Data Engineering Zoomcamp by Data Talks course link : https://github.com/DataTal
 - Using Docker with PostgreSQL
 
 
-## Module 2 : TODO
+## Module 2 : Workflow Orchestration
+- Orchestration using Mage
