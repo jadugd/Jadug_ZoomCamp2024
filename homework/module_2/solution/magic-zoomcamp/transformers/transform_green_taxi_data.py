@@ -25,7 +25,8 @@ def transform(data, *args, **kwargs):
 # Assert blocks for testing
 @test
 def test_vendorid(output, *args):
-    assert 'vendor_id' in output.columns, 'Column vendor_id does not exist.'
+    values_to_check = output['vendor_id'].unique()
+    assert output['vendor_id'].isin(values_to_check).any(), 'Column vendor_id does not have any existing values.'
 
 @test
 def test_passenger(output, *args):
