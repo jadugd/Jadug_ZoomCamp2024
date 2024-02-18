@@ -8,4 +8,13 @@ Data Engineering Zoomcamp by Data Talks course link : https://github.com/DataTal
 
 
 ## Module 2 : Workflow Orchestration
-- Orchestration using Mage
+- Understanding ETL concept
+- Workflow Orchestration using Mage
+
+## Module 3 : Data Warehouse
+- Data Warehousing on BigQuery
+- Partitioning and Clustering on BQ
+
+## Workshop 1 : Data Ingestion
+- Read data source from JSON API
+- Data loading pipeline using DLT 
