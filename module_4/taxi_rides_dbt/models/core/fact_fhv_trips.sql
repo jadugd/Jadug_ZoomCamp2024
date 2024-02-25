@@ -23,7 +23,8 @@ dropoff_locationid,
 dropoff_zone.borough as dropoff_borough,
 dropoff_zone.zone as dropoff_zone,
 sr_flag,
-affiliated_base_number
+affiliated_base_number,
+'FHV' as service_type
 from fhv_tripdata
 inner join dim_zones as pickup_zone
 on fhv_tripdata.pickup_locationid = pickup_zone.locationid
